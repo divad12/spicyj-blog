@@ -1,0 +1,109 @@
+@import "_normalize";
+
+/* http://www.colourlovers.com/palette/2283896/Persian_Gulf */
+@dark-purple: #4c486c;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #fdfdfd;
+    color: #222;
+    font: 16px "franklin-gothic-urw", serif;
+    line-height: 1.3;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 0 -6.5em;
+}
+
+.container {
+    margin: 0 auto;
+    width: 640px;
+}
+
+.header {
+    background: #f0dcc0;
+    font-size: 1.3em;
+    margin: 0 0 1em;
+    padding: 1em 0 1.2em;
+
+    /*
+    .nav {
+        float: right;
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        a:link, a:visited {
+            color: #777;
+        }
+    }
+    */
+
+    strong {
+        display: block;
+
+        a:link, a:visited {
+            color: #222;
+            text-decoration: none;
+        }
+    }
+}
+
+.push {
+    /* for sticky footer */
+    height: 6.5em;
+}
+
+.footer {
+    background: @dark-purple;
+    color: #fdfdfd;
+    height: 2.5em;
+    margin-top: 3em;
+    padding: 1em 0 0;
+
+    .copy {
+        float: right;
+    }
+
+    a:link, a:visited {
+        color: #fff;
+    }
+}
+
+p.byline {
+    margin: -1em 0 1.5em;
+}
+
+pre {
+    border: 1px solid #999;
+    border-style: solid none;
+    padding: 7px 10px 6px;
+}
+
+code {
+    background-color: #eee;
+    font-family: "Inconsolata", serif;
+    padding: 1px 5px;
+}
+
+pre > code {
+    background: 0;
+    padding: 0;
+}
+
+a {
+    color: #04c;
+}
+
+a:visited {
+    color: #639;
+}
