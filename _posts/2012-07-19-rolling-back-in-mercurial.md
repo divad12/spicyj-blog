@@ -25,10 +25,10 @@ then you'll end up with new-giraffe, a repository at revision 77182fb7451f. (The
 This is faster than recloning from the internet because it only copies files locally on your disk (and on many systems, hard-links them to save even more time and space), but can still be really time-consuming if your repository is large.
 
 ## hg strip
-                                                                                
+
 If you want to do more complicated things with modifying the commit history (which is somewhat frowned on in the hg world, by the way), first enable the [Mercurial Queues extension](http://mercurial.selenic.com/wiki/MqExtension/) by adding the following lines to your `.hgrc` (there's no need to specify a path after the equals sign):
 
-    [extensions]                                                                    
+    [extensions]
     mq =
 
 This gives you (among other useful things) the `hg strip` command to completely remove a changeset and all of its descendants from a repository. Thus you can use a command like
